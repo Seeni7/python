@@ -1,0 +1,12 @@
+def varLenArgFunc(*varvallist):
+    print("The Output is: ")
+    for varval in varvallist:
+        print(varval)
+    return
+
+print("calling with single value")
+varLenArgFunc(55)
+print("*****************************")
+print("calling with multiple values")
+
+varLenArgFunc(50,60,70,80,10000000000000000000000000000000000000000000000000000)

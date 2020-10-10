@@ -1,0 +1,11 @@
+def reqArgFunc(empname, emprole):
+    print("Emp Name", empname)
+    print("Emp Role", emprole)
+    return
+
+print("calling proper squence")
+reqArgFunc(empname = "Seeni", emprole = "Manager")
+print("*****************************")
+print("Overeriting default value")
+
+reqArgFunc(emprole = "Manager", empname="Seeni")
