@@ -7,8 +7,8 @@ adject = input("Give the adjective")
 animal = input("Give the animal name")
 profession = input("give the profession")
 
-print("%s Dumpty %s on a wall. \
-    %s Dumpty had a/n %s fall.\
+print("%s Dumpty %s on a wall.\
+    %s Dumpty had an %s fall.\
     All the king's %s and the %s's men.\
-    couln't put %s together again."
+    Couln't put %s together again."
     %(noun_1, verb, noun_2, adject, animal, profession, noun_3))
