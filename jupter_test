@@ -95,3 +95,73 @@ def calculate():
 calculate()
 
 # %%
+colors = ["red", "green"]
+print(colors)
+
+# %%
+colors1 = colors
+print(colors1)
+# %%
+colors1 = ["rouge", "Vert"]
+print(colors1)
+# %%
+colours1 = ["red", "green"]
+print(colours1)
+# %%
+colours2 = colours1
+print(colours2)
+# %%
+colours2 = ["rouge", "vert"]
+print(colours1)
+# %%
+print(colours2)
+# %%
+colours2[1] = colours1
+print(colours2[1])
+# %%
+colours1 = ["red", "green"]
+colours2 = colours1
+colours2[1] = "blue"
+print(colours1)
+# %%
+print(colours2)
+# %%
+list1 = ['a', 'b', 'c', 'd']
+list2 = list1[:]
+list2[1] = 'x'
+print(list2)
+# %%
+print(list1)
+# %%
+list1 = ['a', 'b',['ab','ba']]
+list2 = list1[:]
+print(list1)
+# %%
+print(list2)
+list2[0] = 'c'
+list2[2][1] = 'd'
+print(list1)
+print(list2)
+# %%
+from copy import deepcopy
+list2 = deepcopy(list1)
+list2[2][1] = "d"
+list2[0] = "c"
+print(list2)
+print(list1)
+
+
+# %%
+num = 0
+
+def main():
+    counter(num)
+
+def counter(num):
+    print(num)
+    num += 1
+    counter(num)
+main()
+
+# %%
+
