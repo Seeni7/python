@@ -164,4 +164,78 @@ def counter(num):
 main()
 
 # %%
+def main():
+    num = int(input("Please enter a non-negative integer\n"))
+    fact = factorial(num)
+    print("The factorial of", num, "is", fact)
+def factorial(num):
+    if num == 0:
+        return 1
+    else:
+        return num*factorial(num - 1)
+main()
 
+
+# %%
+
+def main():
+    loopnum = int(input("How many times would you like to loop?\n"))
+    counter = 1
+    recurr(loopnum, counter)
+def recurr(loopnum,counter):
+    if loopnum > 0:
+        print("This is loop iteration", counter)
+        recurr(loopnum - 1, counter +1)
+    else:
+        print("The loop is complete.")
+main()
+
+# %%
+def crazy(min_):
+    yield min_
+    g=crazy(min_+1)
+    while True:
+        yield next(g)
+        yield min_
+i=crazy(1)
+print(i)
+# %%
+class MyClass:
+    "This is my second class"
+    a = 10
+    def func(self):
+        print("Hello")
+print(MyClass.a)
+print(MyClass.func)
+print(MyClass.__doc__)
+ob = MyClass()
+print(MyClass.func(ob))
+print(ob.func())
+# %%
+count = 1
+while count < 10:
+    if count % 2 == 0:
+        break
+    print(f"We're counting odd numbers: {count}")
+    count += 1
+
+# %%
+list_of_points = [{1, 2}, {2, 3}, {4, 5}]
+for x, y in list_of_points:
+    print(f"x: {x}, y: {y}")
+
+# %%
+def hello_world():
+    print("Hello, world")
+# %%
+hello_world
+
+# %%
+hello_world()
+
+# %%
+print ("hello_world")
+# %%
+def hello_world():
+    print("hello world")
+# %%
