@@ -239,3 +239,23 @@ print ("hello_world")
 def hello_world():
     print("hello world")
 # %%
+class Car:
+    """
+    Car models a car w/ tires and an engine
+    """
+
+    def __init__(self, engine, tires):
+        self.engine = engine
+        self.tires = tires
+
+# %%
+civic = Car('4-cylinder', ['front-driver','front-passanger','rear-driver','rear-passanger'])
+civic
+# %%
+civic.engine
+civic.tires
+# %%
+civic.license_plate = 'something'
+# %%
+civic.license_plate
+# %%
