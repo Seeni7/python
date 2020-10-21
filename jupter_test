@@ -296,3 +296,97 @@ print((c2.real, c2.imag, c2.attr))
 
 c.attr
 # %%
+class Point:
+    def __init__(self, x = 0, y = 0):
+        self.x = x
+        self.y = y
+
+# %%
+p1 = Point(2,3)
+p2 = Point(-1,2)
+p1 + P2
+# %%
+def fib(n):
+    if n <=2:
+        return 1
+    else:
+        return fib(n-2) + fib(n - 1)
+
+
+# %%
+n = 1
+
+# %%
+n = 2
+# %%
+n = 10
+
+# %%
+class Fib():
+    cache = {}
+
+    def __call__(self, n):
+        if n in self.cache:
+            ans = self.cache[n]
+
+        if n <= 2:
+            ans = 1
+            self.cache[n] = ans
+        else:
+            ans = self(n - 2) + self(n - 1)
+            self.cache[n] = ans
+
+            return ans
+# %%
+f = Fib()
+
+# %%
+import time as t
+%t [_= f(i) for i in range(1, 35)]
+# %%
+from fractions import Fraction
+def P(event, space):
+    "The probability of an event, given a sample space of equiprobable outcomes"
+    return Fraction(len(event & space), len(space))
+# %%
+D = {1, 2, 3, 4, 5, 6}
+even = {2, 4, 6}
+
+P(even, D)
+# %%
+even = {2, 4, 6, 8, 10, 12}
+
+P(even, D)
+# %%
+def output_decorator(f):
+    def f_(f):
+        f()
+        print("Ran f....")
+        return f_
+
+# %%
+import functools
+
+@functools.lru_cache()
+def fib_lru_cache(n):
+    if n <= 2:
+        return n
+    else:
+        return fib_lru_cache(n-2) + fib_lru_cache(n-1)
+
+# %%
+import timeit
+%timeit (fib.fib_lru_cache(i) for i in range(1, 100))
+# %%
+
+def greet(*names):
+    """This function greets to the person with the provided message"""
+    for name in names:
+         print("Hello",names)
+
+##greet("Monica", "Good Morning!")
+
+# %%
+
+greet("Seeni","Luke","Jothi")
+# %
