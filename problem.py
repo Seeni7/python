@@ -8,6 +8,7 @@ print(res)
 lst = [1, 2, 3, 'text', True, 3+2j]
 
 import numpy as np
+from numpy.lib.shape_base import put_along_axis
 
 arr = np.array(lst)
 
@@ -102,4 +103,97 @@ print(Trans_arr2)
 result_arr = Trans_arr1 / Trans_arr2
 result_arr = result_arr.astype(complex)
 print(result_arr)
+# %%
+
+import numpy as np
+
+arr1 = np.ones(10)
+arr2 = np.arange(10, dtype = np.float64)
+arr3 = arr1 + arr2 
+print(np.result_type(arr1))
+print(np.result_type(arr3))
+# %%
+
+import numpy as np
+arr = np.arange(4)
+print(arr)
+arr.reshape(2,2)
+print(arr.shape)
+# %%
+import numpy as np
+
+arr = np.arange(4).reshape(4, 1)
+print(arr)
+print(arr.shape)
+# %%
+import numpy as np
+S_X = np.array([[2, 5, 6, 5], [4, 8, 6, 5]])
+
+print(S_X)
+
+S_Y = np.array([[6, 7, 5, 9], [7, 5, 6, 4]])
+
+print(S_Y)
+
+print(S_Y - S_X)
+
+print(S_X < 2)
+
+twos_mat = np.ones((2, 4)) * 2
+print(twos_mat)
+print(np.less(S_Y, twos_mat))
+# %%
+import numpy as np 
+
+mat = (np.zeros((4, 4), dtype = int))
+print(mat)
+diag_parent = np.diag([4, 5, 6], 1)
+print(diag_parent)
+
+# %%
+import numpy as np
+
+arr = np.arange(11)
+print(arr)
+
+m = (arr > 6)
+arr[m] *= -1
+print(arr)
+# %%
+import numpy as np
+mat = np.array([['abc', 'A'], ['def', 'B'], ['ghi', 'C'], ['jkl', 'D'] ])
+arr = np.array(['abc', 'def', 'ghi', 'kjl'])
+
+print(mat)
+print(arr)
+
+print(np.mat(4) = arr
+
+# %%
+import numpy as np
+print(np.__version__)
+np.show_config()
+Z = np.zeros(10)
+print(Z)
+# %%
+import pandas as pd 
+import numpy as np
+import matplotlib.pyplot as plt 
+
+s = pd.Series([1, 3, 5, np.nan, 6, 8])
+print(s)
+# %%
+fileHandle = open('test1.txt')
+print(fileHandle.read())
+fileHandle.close()
+
+# %%
+x = 4
+z = 3
+
+x, z = z, x
+print(z, x)
+
+# %%
+
 # %%
