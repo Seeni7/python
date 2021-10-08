@@ -1,11 +1,13 @@
-def fizzBuzz():
-    # Write your code here
-    for i in  range(1, 101):
-        if i % 3 == 0 and i % 5 == 0:
-            print('FizzBuzz')
-        elif 1 % 3 == 0:
-            print ('Fizz')
-        elif i % 5 == 0:
-            print('Buzz')
-        else:
-            print(str(i))
+#!/usr/bin/env python3.7
+
+upper_number = int(input("How many values should we process: "))
+
+for number in range(1, upper_number + 1):
+  if number % 3 == 0 and number % 5 == 0:
+      print("FizzBuzz")
+  elif number % 3 == 0:
+      print("Fizz")
+  elif number % 5 == 0:
+      print("Buzz")
+  else:
+      print(number)
