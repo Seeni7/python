@@ -1,6 +1,0 @@
-n = __
-for i in range(__):
-    for j in range(i):
-        print('*', end="")
-
-    print('')
